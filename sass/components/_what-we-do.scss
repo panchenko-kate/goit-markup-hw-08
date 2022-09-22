@@ -1,0 +1,39 @@
+.work-examples {
+    padding-top: 0;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+  
+.examples-list {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.examples-list__item {
+    position: relative;
+}
+
+.examples-wrapper__title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+    color: $primary-bg-color;
+  
+}
+  
+.examples-wrapper {
+  position: absolute;
+  left:0;
+  bottom: 0;
+    
+  @extend %center;
+  
+  width: 100%;
+  height: 70px;
+  
+  background-color: rgba(47, 48, 58, 0.8);
+}
