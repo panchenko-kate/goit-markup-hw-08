@@ -1,0 +1,84 @@
+.team-members {
+    text-align: center;
+  
+    background-color: $secondary-bg-color;
+}
+  
+.members-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
+
+    // display: flex;
+    // justify-content: space-between;
+}
+  
+.members-list__item {
+    background-color: $primary-bg-color;
+    box-shadow: $box-shadow-card;
+    border-radius: 0px 0px 4px 4px;
+    
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+  
+.team-member__name,
+.team-member__position {
+    line-height: 1.18;
+    text-align: center;
+  
+    font-size: 16px;
+}
+  
+.team-member__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: $title-text-color;
+}
+  
+.team-member__position {
+    margin-bottom: 16px;
+}
+
+.team-member {
+    padding: 30px;
+}
+  
+.icons-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.icons-list__link {
+    @extend %center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+  
+    background-color: $primary-bg-color;
+    color: $icon-color;
+    fill: currentColor;
+  
+    transition: color $primary-transition, background-color $primary-transition;
+
+    &:hover,
+    &:focus {
+        color: $primary-bg-color;
+        background-color: $accent-color;
+    }
+}
+  
+.icons-list > li:not(:first-child) {
+    margin-left: 10px;
+}
