@@ -1,0 +1,123 @@
+.menu-toggle {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+  }
+}
+
+.menu-site {
+  @media screen and (max-width: 767px) {
+      display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 48px;
+  background-color: $primary-bg-color;
+
+  transform: translateX(100%);
+  transition: transform $primary-transition;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu {
+  margin-bottom: 302px;
+  list-style: none;
+
+  &__link {
+    color: $title-text-color;
+
+    font-size: 40px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 0,8;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    overflow: hidden;
+  
+    transition: $primary-transition;
+  
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-contacts {
+    margin-bottom: 64px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 0.85;
+    letter-spacing: 0.02em;
+    list-style: none;
+
+    &__item:first-child {
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        color: $title-text-color;
+
+        letter-spacing: 0.02em;
+
+        text-decoration: none;
+      
+        transition: $primary-transition;
+      
+        &:hover,
+        &:focus {
+          font-size: 34px;
+          color: $accent-color;
+        }
+    }
+}
+
+.menu-sm {
+    display: flex;
+    font-size: 18px;
+    line-height: 0,8;
+    list-style: none;
+    
+
+    &__item:not(:last-child) {
+        padding: 0px 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &__item:last-child {
+        padding-left: 10px;
+    }
+
+    &__item:first-child {
+        padding-left: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $accent-color;
+    }
+
+}
