@@ -9,6 +9,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .page {
@@ -18,14 +20,11 @@ img {
 }
 
 .container {
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and (min-width: 480x) {
-    max-width: 480px;
-  }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;

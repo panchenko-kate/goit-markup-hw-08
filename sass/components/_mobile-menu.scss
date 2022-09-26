@@ -8,6 +8,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    overflow:hidden;
 
     @media screen and (min-width: 768px) {
       display: none;
@@ -18,6 +19,18 @@
   @media screen and (max-width: 767px) {
       display: none;
   }
+}
+
+.icon-menu {
+    color: $title-text-color;
+    transition: color $primary-transition;
+    fill: currentColor;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 
 .menu-container {
@@ -31,6 +44,8 @@
 
   transform: translateX(100%);
   transition: transform $primary-transition;
+
+  z-index: 999;
 }
 
 .menu-container.is-open {
@@ -80,11 +95,8 @@
 
     &__link {
         color: $title-text-color;
-
         letter-spacing: 0.02em;
-
         text-decoration: none;
-      
         transition: $primary-transition;
       
         &:hover,
