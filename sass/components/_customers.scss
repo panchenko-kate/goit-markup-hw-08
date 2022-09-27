@@ -1,7 +1,14 @@
+.regular-customers {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
 .customers-list {
     display: flex;
     flex-wrap: wrap;
-    // align-items: center;
+    gap: 30px;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 
@@ -9,15 +16,19 @@
         width: 450px;
         gap: 30px;
     }
+
+    &__item {
+        width: calc((100% - 2 * 30px ) / 3);
+       
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 5 * 30px ) / 6);
+        }
+    }
 }
-  
-// .customers-list > li:not(:first-child) {
-//     margin-left: 30px;
-// }
   
 .customers-list__icon {
     @extend %center;
-    width: 170px;
     height: 92px;
   
     background-color: $primary-bg-color;
