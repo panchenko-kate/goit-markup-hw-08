@@ -12,7 +12,7 @@
     line-height: 1.71;
     background-color: $third-bg-color;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
        text-align: center;
     }
 }
@@ -25,7 +25,17 @@
 
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
-     }
+    }
+}
+
+.block-contacts {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
 }
 
 .contacts-list__link {
@@ -49,22 +59,27 @@
     width: 232px;
     margin-bottom: 9px;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 768px) {
+        // margin: 0;
+     }
 }
   
 .logo--footer {
     display: block;
     margin-bottom: 20px;
-  
-    // width: 145px;
-
-    // @media screen and (max-width: 767px) {
-    //     text-align: center;
-    //  }
 }
 
 .footer-design {
-    // display: flex;
-    // align-items: baseline;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    }
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .join__title {
@@ -85,7 +100,10 @@
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
      }
-    // margin-left: 70px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
   
 .join-bg {
@@ -118,13 +136,18 @@
   
 .subscribe {
     display: block;
-    // margin-left: 93px;
-    // width: 570px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+        width: 570px;
+    }
 }
   
   
 .subscribe__form {
-    // display: flex;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .subscribe__form input {
@@ -139,8 +162,8 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
-    @media screen and (max-width: 767px) {
-        margin-bottom: 20px;;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -152,10 +175,13 @@
     // @extend %center;
     width: 200px;
     padding: 10px 28px;
-    // margin-left: 12px;
     margin: 0;
   
     font-size: 16px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
   
 .svg-subscribe {
