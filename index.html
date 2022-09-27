@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet" >
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    >
-    <link rel="stylesheet" href="./css/main.min.css" >
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
     <header class="page__header">
@@ -21,69 +22,82 @@
           >Web<span class="logo--black">Studio</span></a
         >
 
-        <button 
-        type="button"
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu">
-        <svg
-          width="40" height="40" aria-label="toggle mobile menu" >
-          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
-        </svg>
-      </button>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="toggle mobile menu">
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
 
         <div class="menu-site">
-        <nav>
-          <ul class="nav-site">
-            <li class="nav-site__item">
-              <a href="./index.html" class="nav-site__link nav-site__link--active">Studio</a>
+          <nav>
+            <ul class="nav-site">
+              <li class="nav-site__item">
+                <a
+                  href="./index.html"
+                  class="nav-site__link nav-site__link--active"
+                  >Studio</a
+                >
+              </li>
+              <li class="nav-site__item">
+                <a href="./portfolio.html" class="nav-site__link">Portfolio</a>
+              </li>
+              <li class="nav-site__item">
+                <a href="#" class="nav-site__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="nav-contacts">
+            <li class="nav-contacts__item">
+              <a href="mailto:info@devstudio.com" class="nav-contacts__link">
+                <svg class="nav-contacts__icon" width="16px" height="12px">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="nav-site__item">
-              <a href="./portfolio.html" class="nav-site__link">Portfolio</a>
+
+            <li class="nav-contacts__item">
+              <a href="tel:+380961111111" class="nav-contacts__link">
+                <svg class="nav-contacts__icon" width="10px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
-            <li class="nav-site__item"><a href="#" class="nav-site__link">Contacts</a></li>
           </ul>
-        </nav>
-
-        <ul class="nav-contacts">
-          <li class="nav-contacts__item">
-            <a href="mailto:info@devstudio.com" class="nav-contacts__link">
-              <svg class="nav-contacts__icon" width="16px" height="12px">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-
-          <li class="nav-contacts__item">
-            <a href="tel:+380961111111" class="nav-contacts__link">
-              <svg class="nav-contacts__icon" width="10px" height="16px">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
+        </div>
       </div>
 
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button type="button" class="menu-toggle js-close-menu">
-          <svg
-          width="40" height="40" aria-label="toggle mobile menu" >
-          <use class="icon-menu" href="./images/symbol-defs.svg#icon-close-menu"></use>
-        </svg>
+          <svg width="40" height="40" aria-label="toggle mobile menu">
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-close-menu"
+            ></use>
+          </svg>
         </button>
-  
-          <ul class="mobile-menu">
-            <li class="mobile-menu__item">
-              <a href="./index.html" class="mobile-menu__link">Studio</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
-            </li>
-            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Contacts</a></li>
-          </ul>
+
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Studio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Contacts</a>
+          </li>
+        </ul>
 
         <ul class="menu-contacts">
           <li class="menu-contacts__item">
@@ -100,29 +114,34 @@
         </ul>
 
         <ul class="menu-sm">
-          <li class="menu-sm__item"> 
-            <a class="menu-sm__link" href="#">Instagram</a> 
+          <li class="menu-sm__item">
+            <a class="menu-sm__link" href="#">Instagram</a>
           </li>
           <li class="menu-sm__item">
-            <a class="menu-sm__link" href="#">Twitter</a> 
+            <a class="menu-sm__link" href="#">Twitter</a>
           </li>
           <li class="menu-sm__item">
-             <a class="menu-sm__link" href="#">Facebook</a>
+            <a class="menu-sm__link" href="#">Facebook</a>
           </li>
-          <li class="menu-sm__item"> 
+          <li class="menu-sm__item">
             <a class="menu-sm__link" href="#">LinkedIn</a>
           </li>
         </ul>
       </div>
-  
     </header>
 
     <main>
       <!-- Hero -->
       <section class="hero">
         <div class="container hero-container">
-          <h1 class="hero-container__title">Effective solutions for your business</h1>
-          <button type="button" class="hero-container__button button" data-modal-open>
+          <h1 class="hero-container__title">
+            Effective solutions for your business
+          </h1>
+          <button
+            type="button"
+            class="hero-container__button button"
+            data-modal-open
+          >
             Request our service
           </button>
         </div>
@@ -194,7 +213,7 @@
                 src="./images/work-examples/example1.jpg"
                 alt="Developing application"
                 width="370"
-              >
+              />
               <div class="examples-wrapper">
                 <h3 class="examples-wrapper__title">Desktop apps</h3>
               </div>
@@ -204,7 +223,7 @@
                 src="./images/work-examples/example2.jpg"
                 alt="Application adaptation"
                 width="370"
-              >
+              />
               <div class="examples-wrapper">
                 <h3 class="examples-wrapper__title">Mobile apps</h3>
               </div>
@@ -214,7 +233,7 @@
                 src="./images/work-examples/example3.jpg"
                 alt="Application design"
                 width="370"
-              >
+              />
               <div class="examples-wrapper">
                 <h3 class="examples-wrapper__title">Design solutions</h3>
               </div>
@@ -230,23 +249,32 @@
             <li class="members-list__item">
               <picture>
                 <source
-                  srcset="./images/team/mb1-mobile.jpg 1x,
-                  ./images/team/mb1-mobile@2x.jpg 2x"
-                  media="(max-width: 767px)" >
-                  <source
-                  srcset="./images/team/mb1-deskope.jpg 1x,
-                  ./images/team/mb1-deskope@2x.jpg 2x"
-                  media= "(min-width: 1200px)" >
-                  <source
-                  srcset="./images/team/mb1-tablet.jpg 1x,
-                  ./images/team/mb1-tablet@2x.jpg 2x"
-                  media="(min-width: 768px)" >
+                  srcset="
+                    ./images/team/mb1-mobile.jpg    1x,
+                    ./images/team/mb1-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mb1-deskope.jpg    1x,
+                    ./images/team/mb1-deskope@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mb1-tablet.jpg    1x,
+                    ./images/team/mb1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
 
-
-                  <img src="./images/team/mb1-mobile.jpg "
-                  alt="Product Designer" >
-
-            </picture>
+                <img
+                  src="./images/team/mb1-mobile.jpg "
+                  alt="Product Designer"
+                />
+              </picture>
               <div class="team-member">
                 <h3 class="team-member__name" lang="ru">Игорь Демьяненко</h3>
                 <p class="team-member__position">Product Designer</p>
@@ -291,23 +319,33 @@
             <li class="members-list__item">
               <picture>
                 <source
-                  srcset="./images/team/mb2-mobile.jpg 1x,
-                  ./images/team/mb2-mobile@2x.jpg 2x"
-                  media="(max-width: 767px)" >
-                  <source
-                  srcset="./images/team/mb2-deskope.jpg 1x,
-                  ./images/team/mb2-deskope@2x.jpg 2x"
-                  media="(min-width: 1200px)" >
-                  <source
-                  srcset="./images/team/mb2-tablet.jpg 1x,
-                  ./images/team/mb2-tablet@2x.jpg 2x"
-                  media="(max-width: 1999px)" >
+                  srcset="
+                    ./images/team/mb2-mobile.jpg    1x,
+                    ./images/team/mb2-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mb2-deskope.jpg    1x,
+                    ./images/team/mb2-deskope@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mb2-tablet.jpg    1x,
+                    ./images/team/mb2-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1999px)"
+                />
 
-  
-                  <img src="./images/team/mb2-mobile.jpg "
-                  alt="Frontend Developer">
+                <img
+                  src="./images/team/mb2-mobile.jpg "
+                  alt="Frontend Developer"
+                />
               </picture>
-          
+
               <div class="team-member">
                 <h3 class="team-member__name" lang="ru">Ольга Репина</h3>
                 <p class="team-member__position">Frontend Developer</p>
@@ -350,25 +388,32 @@
                 </ul>
               </div>
             </li>
-            
+
             <li class="members-list__item">
               <picture>
                 <source
-                  srcset="./images/team/mb3-mobile.jpg 1x,
-                  ./images/team/mb3-mobile@2x.jpg 2x"
-                  media="(max-width: 767px)" >
-                  <source
-                  srcset="./images/team/mb3-deskope.jpg 1x,
-                  ./images/team/mb3-deskope@2x.jpg 2x"
-                  media="(min-width: 1200px)" >
-                  <source
-                  srcset="./images/team/mb3-tablet.jpg 1x,
-                  ./images/team/mb3-tablet@2x.jpg 2x"
-                  media="(max-width: 1999px)" >
+                  srcset="
+                    ./images/team/mb3-mobile.jpg    1x,
+                    ./images/team/mb3-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mb3-deskope.jpg    1x,
+                    ./images/team/mb3-deskope@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mb3-tablet.jpg    1x,
+                    ./images/team/mb3-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1999px)"
+                />
 
-  
-                  <img src="./images/team/mb3-mobile.jpg "
-                  alt="Marketing">
+                <img src="./images/team/mb3-mobile.jpg " alt="Marketing" />
               </picture>
 
               <div class="team-member">
@@ -416,21 +461,28 @@
             <li class="members-list__item">
               <picture>
                 <source
-                  srcset="./images/team/mb4-mobile.jpg 1x,
-                  ./images/team/mb4-mobile@2x.jpg 2x"
-                  media="(max-width: 767px)" >
-                  <source
-                  srcset="./images/team/mb4-deskope.jpg 1x,
-                  ./images/team/mb4-deskope@2x.jpg 2x"
-                  media="(min-width: 1200px)" >
-                  <source
-                  srcset="./images/team/mb4-tablet.jpg 1x,
-                  ./images/team/mb4-tablet@2x.jpg 2x"
-                  media="(max-width: 1999px)" >
+                  srcset="
+                    ./images/team/mb4-mobile.jpg    1x,
+                    ./images/team/mb4-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mb4-deskope.jpg    1x,
+                    ./images/team/mb4-deskope@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mb4-tablet.jpg    1x,
+                    ./images/team/mb4-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1999px)"
+                />
 
-  
-                  <img src="./images/team/mb4-mobile.jpg "
-                  alt="UI Designer">
+                <img src="./images/team/mb4-mobile.jpg " alt="UI Designer" />
               </picture>
 
               <div class="team-member">
@@ -485,46 +537,46 @@
           <div class="customers">
             <ul class="customers-list">
               <li class="customers-list__item">
-                  <a href="#" class="customers-list__icon">
-                    <svg width="106px" height="60px">
-                      <use href="./images/symbol-defs.svg#icon-partner-1"></use>
-                    </svg>
-                  </a>
+                <a href="#" class="customers-list__icon">
+                  <svg width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#icon-partner-1"></use>
+                  </svg>
+                </a>
               </li>
               <li class="customers-list__item">
-                  <a href="#" class="customers-list__icon">
-                    <svg width="106px" height="60px">
-                      <use href="./images/symbol-defs.svg#icon-partner-2"></use>
-                    </svg>
-                  </a>
+                <a href="#" class="customers-list__icon">
+                  <svg width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#icon-partner-2"></use>
+                  </svg>
+                </a>
               </li>
               <li class="customers-list__item">
-                  <a href="#" class="customers-list__icon">
-                    <svg width="106px" height="60px">
-                      <use href="./images/symbol-defs.svg#icon-partner-3"></use>
-                    </svg>
-                  </a>
+                <a href="#" class="customers-list__icon">
+                  <svg width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#icon-partner-3"></use>
+                  </svg>
+                </a>
               </li>
               <li class="customers-list__item">
-                  <a href="#" class="customers-list__icon">
-                    <svg width="106px" height="60px">
-                      <use href="./images/symbol-defs.svg#icon-partner-4"></use>
-                    </svg>
-                  </a>
+                <a href="#" class="customers-list__icon">
+                  <svg width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#icon-partner-4"></use>
+                  </svg>
+                </a>
               </li>
               <li class="customers-list__item">
-                  <a href="#" class="customers-list__icon">
-                    <svg width="106px" height="60px">
-                      <use href="./images/symbol-defs.svg#icon-partner-5"></use>
-                    </svg>
-                  </a>
+                <a href="#" class="customers-list__icon">
+                  <svg width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#icon-partner-5"></use>
+                  </svg>
+                </a>
               </li>
               <li class="customers-list__item">
-                  <a href="#" class="customers-list__icon">
-                    <svg width="106px" height="60px">
-                      <use href="./images/symbol-defs.svg#icon-partner-6"></use>
-                    </svg>
-                  </a>
+                <a href="#" class="customers-list__icon">
+                  <svg width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#icon-partner-6"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -536,23 +588,26 @@
       <div class="container footer-design">
         <div class="block-contacts">
           <a href="./index.html" class="logo logo--footer"
-            >Web<span class="logo--white">Studio</span></a>
+            >Web<span class="logo--white">Studio</span></a
+          >
 
-            <address class="footer-contacts">
-              <p class="footer-contacts__address">
-                695 Park Ave, New York, NY 10065, United States
-              </p>
-              <ul class="contacts-list">
-                <li class="contacts-list__item">
-                  <a href="mailto:info@example.com" class="contacts-list__link"
-                    >info@example.com</a>
-                </li>
-                <li class="contacts-list__item">
-                  <a href="tel:+12127724150" class="contacts-list__link"
-                    >+1 212-772-4150</a>
-                </li>
-              </ul>
-            </address>
+          <address class="footer-contacts">
+            <p class="footer-contacts__address">
+              695 Park Ave, New York, NY 10065, United States
+            </p>
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a href="mailto:info@example.com" class="contacts-list__link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="contacts-list__item">
+                <a href="tel:+12127724150" class="contacts-list__link"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
 
         <div class="join">
@@ -591,10 +646,10 @@
 
         <div class="subscribe">
           <b class="subscribe__text">Subscribe to the newsletter</b>
-           <form class="subscribe__form">
-              <label>
-                <input type="email" name="mail" placeholder="E-mail" >
-              </label>
+          <form class="subscribe__form">
+            <label>
+              <input type="email" name="mail" placeholder="E-mail" />
+            </label>
 
             <button type="submit" class="subscribe__button button">
               Subscribe
@@ -602,8 +657,8 @@
                 <use href="./images/symbol-defs.svg#icon-subscribe"></use>
               </svg>
             </button>
-           </form>
-      </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -619,10 +674,10 @@
           <b class="form__name"
             >Leave your information and we'll call you back</b
           >
-          
+
           <label class="form__field">
             Name
-            <input type="text" name="name" class="form__input" >
+            <input type="text" name="name" class="form__input" />
             <svg class="svg-form" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-person-modal"></use>
             </svg>
@@ -630,7 +685,7 @@
 
           <label class="form__field">
             Telephone
-            <input type="tel" name="tel" class="form__input" >
+            <input type="tel" name="tel" class="form__input" />
             <svg class="svg-form" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
             </svg>
@@ -638,7 +693,7 @@
 
           <label class="form__field">
             E-mail
-            <input type="email" name="mail" class="form__input" >
+            <input type="email" name="mail" class="form__input" />
             <svg class="svg-form" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-mail-modal"></use>
             </svg>
@@ -656,7 +711,7 @@
           </label>
 
           <label class="form__checkbox">
-            <input type="checkbox" name="agreement" class="form__agreement" >
+            <input type="checkbox" name="agreement" class="form__agreement" />
             <span class="icon-check"></span>
             I agree with the newsletter and accept the
             <a href="#" class="agreement__link">Terms and Conditions</a>

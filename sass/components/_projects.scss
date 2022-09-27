@@ -1,10 +1,36 @@
 .projects-list {
-    display: flex;
-    flex-wrap: wrap;
     box-sizing: border-box;
     list-style: none;
 
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+.projects-card {
+    cursor: pointer;
+    transition: box-shadow $primary-transition;
+
+    &:not(:last-child) {
+    @media screen and (max-width: 787px) {
+        margin-bottom: 30px;
+    }
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 1 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 2 * 30px) / 3);
+    }
+
 }
 
 .projects-card__link {
@@ -28,13 +54,6 @@
   
     color: $title-text-color;
 }
-
-.projects-card {
-    width: 370px;
-  
-    cursor: pointer;
-    transition: box-shadow $primary-transition;
-}
   
 .projects-card__work-type {
     line-height: 1.87;
@@ -44,7 +63,6 @@
 }
   
 .projects-card__content {
-    width: 370px;
     padding: 20px 24px;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
