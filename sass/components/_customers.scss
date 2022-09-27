@@ -19,7 +19,6 @@
 
     &__item {
         width: calc((100% - 2 * 30px ) / 3);
-       
     
         @media screen and (min-width: 1200px) {
             width: calc((100% - 5 * 30px ) / 6);
