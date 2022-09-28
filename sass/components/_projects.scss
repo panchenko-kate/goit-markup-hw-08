@@ -109,6 +109,12 @@
     .projects-card__link:focus & {
     opacity: 1;
     } 
+
+    @media screen and (max-width: 1199px) {
+        .projects-card__link:active & {
+             opacity: 1;
+        }
+    }
 }
 
 .project-overlay__text {
