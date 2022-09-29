@@ -100,12 +100,13 @@ img {
   
     color: $title-text-color;
   
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.16;
     text-align: center;
 
     @media screen and (max-width: 1199px) {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       font-size: 28px;
     }
 

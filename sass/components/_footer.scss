@@ -59,14 +59,9 @@
     width: 232px;
     margin-bottom: 9px;
     letter-spacing: 0.03em;
-
-    @media screen and (min-width: 768px) {
-        // margin: 0;
-     }
 }
   
 .logo--footer {
-    display: block;
     margin-bottom: 20px;
 }
 
@@ -172,7 +167,8 @@
 }
   
 .subscribe__button {
-    // @extend %center;
+    display: inline-flex;
+    justify-content: center;
     width: 200px;
     padding: 10px 28px;
     margin: 0;

@@ -89,7 +89,11 @@
 
         <ul class="mobile-menu">
           <li class="mobile-menu__item">
-            <a href="./index.html" class="mobile-menu__link">Studio</a>
+            <a
+              href="./index.html"
+              class="mobile-menu__link mobile-menu__link--active"
+              >Studio</a
+            >
           </li>
           <li class="mobile-menu__item">
             <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
@@ -99,6 +103,7 @@
           </li>
         </ul>
 
+        <div class="contacts-container">
         <ul class="menu-contacts">
           <li class="menu-contacts__item">
             <a href="mailto:info@devstudio.com" class="menu-contacts__link">
@@ -127,6 +132,7 @@
             <a class="menu-sm__link" href="#">LinkedIn</a>
           </li>
         </ul>
+      </div>
       </div>
     </header>
 
@@ -209,31 +215,55 @@
           <h2 class="section__title">What we do</h2>
           <ul class="examples-list">
             <li class="examples-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/work-examples/example1.jpg    1x,
+                    ./images/work-examples/example1@2x.jpg 2x
+                  "
+                />
               <img
                 src="./images/work-examples/example1.jpg"
                 alt="Developing application"
                 width="370"
               />
+            </picture>
               <div class="examples-wrapper">
                 <h3 class="examples-wrapper__title">Desktop apps</h3>
               </div>
             </li>
             <li class="examples-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/work-examples/example2.jpg    1x,
+                    ./images/work-examples/example2@2x.jpg 2x
+                  "
+                />
               <img
                 src="./images/work-examples/example2.jpg"
                 alt="Application adaptation"
                 width="370"
               />
+            </picture>
               <div class="examples-wrapper">
                 <h3 class="examples-wrapper__title">Mobile apps</h3>
               </div>
             </li>
             <li class="examples-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/work-examples/example3.jpg    1x,
+                    ./images/work-examples/example3@2x.jpg 2x
+                  "
+                />
               <img
                 src="./images/work-examples/example3.jpg"
                 alt="Application design"
                 width="370"
               />
+            </picture>
               <div class="examples-wrapper">
                 <h3 class="examples-wrapper__title">Design solutions</h3>
               </div>

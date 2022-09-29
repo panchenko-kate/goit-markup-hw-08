@@ -5,6 +5,10 @@
 .menu-site {
     display: flex;
     align-items: center;
+
+    & nav {
+      margin-left: 87px;
+    }
 }
   
 .logo {
@@ -70,15 +74,12 @@
 
     font-size: 14px;
     line-height: 1.14;
-  }
+  
+}
 }
 
 .nav-site__item:not(:first-child) {
   margin-left: 50px;
-}
-
-.nav-site__item:first-child {
-  margin-left: 87px;
 }
 
 .header-icon {
@@ -134,6 +135,18 @@
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+.nav-contacts__link:first-child {
+  @media screen and (max-width: 1199.5px) {
+    padding-top: 10px;
+  }
+}
+
+.nav-contacts__link:last-child {
+  @media screen and (max-width: 1199.5px) {
+    padding-bottom: 10px;
   }
 }
 

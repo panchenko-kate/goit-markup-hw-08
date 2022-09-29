@@ -32,22 +32,17 @@
 .filter-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    gap: 8px;
+    margin-bottom: 30px;
     list-style: none;
-
-    &__item:not(:first-child) {
-            margin-left: 8px;
-        }
-
-    &__item:nth-child(-n+3) {
-        @media screen and (max-width: 787px) {
-        margin-bottom: 15px;
-        }
-    }
 
     @media screen and (min-width: 787px) {
         justify-content: center;
         align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
     }
 }
   

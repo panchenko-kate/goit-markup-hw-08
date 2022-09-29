@@ -24,6 +24,7 @@
     }
     
     @media screen and (min-width: 768px) {
+        display: flex;
         width: calc((100% - 1 * 30px) / 2);
     }
 
@@ -43,6 +44,11 @@
     &:hover,
     &:focus {
         box-shadow: $box-shadov-hover-card;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
     }
 }
   
@@ -67,6 +73,10 @@
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+
+    @media screen and (min-width:768px) {
+        flex-grow: 1;
+    }
 }
   
 .projects-card__thumb {
@@ -104,6 +114,7 @@
   
     opacity: 0;
     transition: opacity $primary-transition;
+    overflow-y: scroll;
 
     .projects-card__link:hover &,
     .projects-card__link:focus & {
