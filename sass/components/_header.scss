@@ -74,8 +74,7 @@
 
     font-size: 14px;
     line-height: 1.14;
-  
-}
+  }
 }
 
 .nav-site__item:not(:first-child) {
@@ -138,15 +137,15 @@
   }
 }
 
-.nav-contacts__link:first-child {
+.nav-contacts__link--mail {
   @media screen and (max-width: 1199.5px) {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 }
 
-.nav-contacts__link:last-child {
+.nav-contacts__link--phone {
   @media screen and (max-width: 1199.5px) {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 }
 
